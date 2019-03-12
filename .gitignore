@@ -1,0 +1,12 @@
+# WIP
+now.json
+save_email
+
+# secrets
+.env
+
+# deps
+node_modules
+
+# build output
+dist
