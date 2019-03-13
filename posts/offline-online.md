@@ -1,5 +1,7 @@
 # Losing our digital future
 
+#### Eoin McCarthy | 130319
+
 ## hi there, i'm going to talk about being a in pub. i hope, that by explaining some blindingly obvious things about this pub, you will understand why we will eventually get rid of facebook.
 
 ### this is my first blog post
