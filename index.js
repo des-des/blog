@@ -20,6 +20,12 @@ if (process.env.NODE_ENV === 'DEVELOPMENT') {
     .use(morgan('tiny'))
 }
 
+app.get('/', (req, res) => {
+  index().then(html => {
+    res.send(html)
+  })
+})
+
 app.get('/posts/:blogName', (req, res, next) => {
   render(req.params.blogName).then((html) => {
     res.send(html)
