@@ -39,7 +39,7 @@ module.exports = (content, slug) => templator`
     <style>
       ${content.rawStyle()}
     </style>
-    <script defer src="/main.js">
+    <script defer src="/main.js"></script>
   </body>
 </html>
 `

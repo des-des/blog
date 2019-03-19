@@ -49,4 +49,4 @@ I want to write more and think more about this, and write in more detail about t
   <input type="submit" value="Keep me updated"/>
 </form>
 
-Find me on twitter (desmond_eoin) and feel free to grab the url and share it wherever.
+Find me on twitter (eoin_des_des), feel free to grab the url and share it wherever.

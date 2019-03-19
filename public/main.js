@@ -25,7 +25,7 @@
       event.preventDefault()
 
       post(
-        '__email-url__',
+        '/api/email',
         { email: event.target.email.value },
         function(error) {
           if (error) {
@@ -36,7 +36,7 @@
           forms[0].parentElement.innerHTML =
             '<p> Thank you, come back soon! </p>'
             + '<p> Please grab the url and share it. </p>'
-            + '<p> My handle on twitter is desmond_eoin </p>'
+            + '<p> My handle on twitter is eoin_des_des </p>'
         }
       )
     }, false)
