@@ -5,9 +5,8 @@ const bodyParser = require('body-parser')
 const morgan = require('morgan')
 require('env2')('.env')
 
-const index = require('./lib/index')
 const query = require('./lib/query')
-const render = require('./lib/render')
+const { indexPage, postPage } = require('./templates/')
 
 const app = express()
 
@@ -21,13 +20,13 @@ if (process.env.NODE_ENV === 'DEVELOPMENT') {
 }
 
 app.get('/', (req, res) => {
-  index().then(html => {
+  indexPage().then(html => {
     res.send(html)
   })
 })
 
 app.get('/posts/:blogName', (req, res, next) => {
-  render(req.params.blogName).then((html) => {
+  postPage(req.params.blogName).then((html) => {
     res.send(html)
   }).catch(err => {
     console.error(err);
